@@ -1,0 +1,49 @@
+<!-- dissecando-uma-promise.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dissecando uma promise</title>
+</head>
+
+<body>
+    <script>
+
+
+        let ok = true;
+        let promise = new Promise((resolve, reject) => {
+
+            // como temos mais de uma instrução, precisamos colocar um bloco em nossa arrow function! Lembrou?
+            setTimeout(() => {
+                if (ok) {
+                    resolve('PROMISE CONCLUÍDA');
+                } else {
+                    /*
+                    Lidando com erros
+                    E se algo sair errado? Onde trataremos o erro? Quando há algum erro dentro do corpo da nossa Promise,
+                     cabe ao desenvolvedor capturar esse erro e passá-lo para a função reject: 
+                     Mas é claro que queremos que nossa promise esteja preparada para resolver ou rejeitar.
+                      Para efeito didático, vamos colocar um variável booleana. Se for true, resolvemos, se for false,
+                       rejeitamos. Dessa forma, você pode brincar e simular quando a promise é resolvida ou não:*/
+
+                    reject('HOUVE PROBLEMAS');
+                }
+            }, 5000);
+        });
+
+        promise
+            .then(
+                /* Obtendo o retorno da ação
+           É por meio do método then, da instância de Promise que temos acesso ao resultado da ação.
+            O método then recebe uma função e nela temos acesso sempre como primeiro parâmetro ao resultado da ação.
+             Internamente em nossa Promise, é o valor passado para resolve que estará disponível para a função then.
+              Sendo assim, em then, só depois de 5 segundos teremos acesso ao resultado a ação, que é uma string,
+               mas poderia ser qualquer outro tipo de dado.
+           */
+                resultado => console.log(resultado))
+            .catch(erro => console.log(erro));
+    </script>
+</body>
+
+</html>
