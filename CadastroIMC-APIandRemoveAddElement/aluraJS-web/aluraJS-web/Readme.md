@@ -1,0 +1,1 @@
+Curso feito na Alura com intuito de melhorar  a manipulação do DOM com JavaScript assim fazendo um trabalho onde se manipula elementos de uma tabela no HTML para realizar funções de excluir/inserir/pesquisar no site
