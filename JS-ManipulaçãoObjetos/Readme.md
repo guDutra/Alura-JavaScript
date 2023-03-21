@@ -1,0 +1,1 @@
+Curso inicial da formação na Alura "Desenvolva Aplicações Web em JavaScript com tarefas concorrentes e orientadas a objetos" onde foi revisado conceito de objetos no JS e como utilizar o armazenamento Local, ou Local Storage.
