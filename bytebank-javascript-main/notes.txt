@@ -1,0 +1,14 @@
+Termo Significado
+Concorrência:	Um programa é concorrente quando é composto de tarefas que podem ser executadas em ordens diferentes.
+Event Loop:	É um ciclo que monitora e executa as ações que mandamos para o JavaScript. O processo de leitura do código só é finalizado quando não existem mais ações a serem executadas.
+Task Queue:	A fila de tarefas assíncronas.
+Call Stack:	É um mecanismo que organiza como irá funcionar o script quando existem muitas funções: qual função está sendo executada, quais estão sendo chamadas dentro de alguma função, etc.
+
+
+
+<p align="center"> <img src="https://imgur.com/1mc1qX7.png" alt="JavaScript: trabalhando com threads para requisições simultâneas"> </p>
+
+<hr>
+
+<p align="center"> <img src="https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png" alt="Logo da Alura"> </p>
+<p align="center">Bytebank: o seu banco digital!</p>
