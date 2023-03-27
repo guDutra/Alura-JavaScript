@@ -1,0 +1,1 @@
+Projeto feito na alura com foco em JavaScript onde foi estudado reconhecimento de voz em uma aplicação
