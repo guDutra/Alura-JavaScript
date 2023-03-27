@@ -14,5 +14,5 @@ const guerreiraJorge = new Guerreiro('Jorge', 8)
 
 const personagens = [magoAntonio, magaJulia, arqueiroBruno, arqueiroDutra, arqueiroMagoChico, guerreiraJorge]
 //console.log(Personagem.verificarVencedor(arqueiroBruno, magoAntonio))
-console.log(guerreiraJorge.#level)
+console.log(guerreiraJorge.level)
 new PersonagemView(personagens).render()
