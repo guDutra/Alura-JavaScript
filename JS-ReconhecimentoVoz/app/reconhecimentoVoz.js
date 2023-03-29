@@ -17,6 +17,7 @@ function exibeChuteNaTela(chute) {
     <div> Voce disse :</div>
     <span class="box"> ${chute}</span>`
     // console.log(chute);
+    console.log("opa")
 }
 
 recognition.addEventListener('end', () => recognition.start());
