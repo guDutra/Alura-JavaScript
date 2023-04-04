@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "dist/js",
-        "target": "ES6",
+        "target": "ESNext",
         "noEmitOnError": true,
         "noImplicitAny": true
     },
